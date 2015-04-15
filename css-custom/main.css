@@ -1,0 +1,85 @@
+/*****************
+GENERAL
+*****************/
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/****************
+HEADING
+****************/
+
+.header-image {
+    background: url(../img/header.JPG);
+}
+
+header h1 {
+    font-weight: 800;
+}
+
+header h2 {
+    font-weight: 200;
+}
+
+#page-top {
+    margin: 0;
+    padding-top: 50px;
+}
+
+
+    
+
+/*****************
+NAVIGATION
+*****************/
+
+.navbar-nav {
+  float: right;
+  margin: 0;
+} 
+
+
+
+/*****************
+SECTION
+*****************/
+
+.mywork-section, .skills-section, .contact-section, .about-section {
+    padding-top: 90px;
+}
+
+.featurette-divider {
+    margin: 80px 0 0 0;
+}
+  
+hr .contact-line {
+  margin-bottom: 80px;
+}
+
+#about h2, p {
+    margin-left: 25px;
+}
+
+.text-muted {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+
+/*****************
+COLOURS
+*****************/
+
+
+
+
+/*****************
+HEADER
+*****************/
+
+.header-image {
+    height: 600px;
+    padding-top: 50px;
+}
