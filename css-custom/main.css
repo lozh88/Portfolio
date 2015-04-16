@@ -50,7 +50,7 @@ h1, h2 {
 }
 
 header {
-    background-image: url(http://placekitten.com/g/200/300);
+    background-image: url(http://placehold.it/1200x1267&text=Not+yet+an+image);
 }
 
 h2 {
@@ -67,7 +67,7 @@ a .navbar-brand {
 }
 
 .bg-primary {
-    background-color: #A6989C;
+    background-color: #6B273A;
 }
 
 .navbar-default.affix .navbar-header .navbar-brand {
@@ -75,8 +75,8 @@ a .navbar-brand {
 }
 
 .btn-primary {
-    border-color: #A6989C;
-    background-color: #A6989C;
+    border-color: #6B273A;
+    background-color: #6B273A;
 }
 /************************
 FOOTER
@@ -85,4 +85,40 @@ FOOTER
 footer p {
     text-align: center;
     padding: 15px;
+}
+
+#contact {
+    padding-bottom: 50px;
+}
+
+ul {
+ overflow: auto;
+}
+ 
+ul li {
+ list-style-type: none;
+}
+ 
+ul li a i {
+ background: #6B273A;
+ color: #fff;
+ width: 40px;
+ height: 40px;
+ border-radius: 20px;
+ font-size: 50px;
+ text-align: center;
+ margin-right: 10px;
+ padding-top: 15%;
+}
+
+.social-buttons {
+    margin-bottom: 30px;
+}
+
+.fa {
+    padding-top: 12px;
+}
+
+.fa-twitter {
+    margin-right: 0;
 }
