@@ -1,85 +1,88 @@
-/*****************
+/************************
 GENERAL
-*****************/
+************************/
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-/****************
-HEADING
-****************/
-
-.header-image {
-    background: url(../img/header.JPG);
-}
-
-header h1 {
-    font-weight: 800;
-}
-
-header h2 {
-    font-weight: 200;
-}
-
-#page-top {
-    margin: 0;
-    padding-top: 50px;
-}
-
-
-    
-
-/*****************
+/************************
 NAVIGATION
-*****************/
+************************/
 
-.navbar-nav {
-  float: right;
-  margin: 0;
-} 
-
-
-
-/*****************
-SECTION
-*****************/
-
-.mywork-section, .skills-section, .contact-section, .about-section {
-    padding-top: 90px;
-}
-
-.featurette-divider {
-    margin: 80px 0 0 0;
-}
-  
-hr .contact-line {
-  margin-bottom: 80px;
-}
-
-#about h2, p {
-    margin-left: 25px;
-}
-
-.text-muted {
-    font-size: 30px;
-    font-weight: 100;
-    line-height: 1;
+.nav {
+    font-family: 'Oxygen', sans-serif;
 }
 
 
-/*****************
-COLOURS
-*****************/
 
+/************************
+PAGES
+************************/
 
-
-
-/*****************
-HEADER
-*****************/
-
-.header-image {
-    height: 600px;
+.projects {
     padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .mail {
+        margin-left: 16.66666667%;
+    }
+    
+    .col-lg-4 {
+        width: 33.33333333%;
+        float: left;
+    }
+}
+
+.contact-icon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/************************
+HEADING
+************************/
+
+h1, h2 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+header {
+    background-image: url(http://placekitten.com/g/200/300);
+}
+
+h2 {
+    font-size: 60px;
+}
+    
+    
+/************************
+COLOURS
+************************/
+
+a .navbar-brand {
+    color: #700808;
+}
+
+.bg-primary {
+    background-color: #A6989C;
+}
+
+.navbar-default.affix .navbar-header .navbar-brand {
+    color: #700808;
+}
+
+.btn-primary {
+    border-color: #A6989C;
+    background-color: #A6989C;
+}
+/************************
+FOOTER
+************************/
+
+footer p {
+    text-align: center;
+    padding: 15px;
 }

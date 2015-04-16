@@ -6,22 +6,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Hi I'm a front-end developer! I love creating awesome user experiences and value the beauty of simple functionality.">
+    <meta name="author" content="Lauren Henry">
 
-    <title>Lauren Henry | Front-end Ninja</title>
+    <title>Lauren Henry | Creative Front-end Developer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300|Oxygen:700' rel='stylesheet'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css"
 
     <!-- Custom CSS -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
-    <link href="scroll-css/scrolling-nav.css" rel="stylesheet">
-    <link href="css-custom/main.css" rel="stylesheet">
-    
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-    
+    <link rel="stylesheet" href="css/creative.css">
+    <link rel="stylesheet" href="css-custom/main.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,12 +36,11 @@
 
 <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -46,17 +48,21 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Lauren Henry</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#my-work">My Work</a>
+                        <a class="page-scroll" href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#skills">Skills</a>
+                        <a class="page-scroll" href="#edu">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#mywork">My Work</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -65,105 +71,227 @@
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
-    <!-- Full Width Image Header -->
-    <header class="header-image">
-        <div class="headline">
-            <div class="container">
-                <h1>Lauren Henry</h1>
-                <h2>Front-end Developer</h2>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>LAUREN HENRY</h1>
+                <hr>
+                <p>Front-end Web Developer</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
     </header>
 
-    <!-- Page Content -->
-    <div class="container">
-      
-        <hr class="featurette-divider">
-
-        <!-- About -->
-      
-      <div id="about" class="about-section">
-              
-        <div class="featurette">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://fillmurray.com/g/500/500">
-            <h2 class="featurette-heading">About. <br/>
-                <span class="text-muted">A little about me.</span>
-            </h2>
-            <p class="lead">I am passionate about the logic in creativity. Beautiful style and well-engineered whitespace are some of the things drive me. Coming from a arts background with a degree in Engineering I love standards and communicating ideas effectively. And the Web is such a wonderous place to do it! With so many people to interact with and the biggest blank canvas I have ever seen, I am ready to splash some style all over it! </p>
-        </div>
-      </div>
-      
-      <!-- My Work -->
-      
-      <hr class="featurette-divider">
-      
-      <div id="my-work" class="mywork-section">
-        
-        <div class="featurette">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://fillmurray.com/g/500/500">
-            <h2 class="featurette-heading">What I Can Do.
-                <span class="text-muted">Projects I've worked on.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      
-      </div>
-      
-      <!-- Skills -->
-      
-      <hr class="featurette-divider">
-        
-      <div id="skills" class="skills-section">
-        
-        <div class="featurette">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://fillmurray.com/g/500/500">
-            <h2 class="featurette-heading">Skills.
-                <span class="text-muted">All about professional development.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      
-      </div>
-      
-      <hr class="featurette-divider">
-      
-      <!-- Contact -->
-      <div id="contact" class="contact-section">
-        <div class="featurette">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://fillmurray.com/g/500/500">
-            <h2 class="featurette-heading">Contact.
-                <span class="text-muted">I would <em>love</em> to hear from you.</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-      </div>
-  
-        <hr class="featurette-divider">
-
-        <!-- Footer -->
-        <footer>
+    <!-- About -->
+    <section class="bg-primary" id="about">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; 2015 Lauren Henry.</p>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">A little about me.</h2>
+                    <p>I am passionate about the logic in creativity.</p>
+                    <hr class="light">
+                    <p class="text-faded">Beautiful style and well-engineered whitespace are some of the things drive me.<br/>Coming from an Arts background with a degree in Engineering I love standards and communicating ideas effectively. And the Web is such a wonderous place to do it! With so many people to interact with and the biggest blank canvas I have ever seen, I am ready to splash some style all over it!</p>
+                    <a href="#contact" class="btn btn-default btn-xl page-scroll">Heard enough?</a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-    </div>
-    <!-- /.container -->
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">In A Nutshell</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>Passionate about UX</h3>
+                        <p class="text-muted">Continually learning to enhance functionality</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Effective Communicator</h3>
+                        <p class="text-muted">Maintaining an open dialogue to ensure success</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Creative</h3>
+                        <p class="text-muted">Using those art skills to make the web beautiful.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Total team-player</h3>
+                        <p class="text-muted">Maintaining a network of professionals to develop skills and stay fresh.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education -->
+    <section id ="edu" class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>I am more than just what you think I am.</h2>
+                <!-- put education in link to expand out -->
+                <a href="#" class="btn btn-default btn-xl">View Credentials!</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="no-padding" id="mywork">
+        <div class="container-fluid">
+            <div class="call-to-action projects text-center">
+            <h2>My projects are my creative children</h2>
+            </div>
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://unsplash.it/650/350?image=535" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Web Dev
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://unsplash.it/650/350?image=534" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://unsplash.it/650/350?image=532" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://unsplash.it/650/350?image=533" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://unsplash.it/650/350?image=531" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="https://unsplash.it/650/350?image=625" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Come on... Don't be shy</h2>
+                    <hr class="primary">
+                    <p>I am always happy to hear from new and interesting people. Get in touch to talk projects or just say hello!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center mail contact-icon">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>+447887 650 174</p>
+                </div>
+                <div class="col-lg-4 text-center contact-icon">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:hello@laurenhenry.co.uk">hello@laurenhenry.co.uk</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2015 Lauren Henry.</p>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-      
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-  
-    <!-- Scrolling Nav JavaScript -->
-    <script src="scroll-js/jquery.easing.min.js"></script>
-    <script src="scroll-js/scrolling-nav.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
 </body>
 
