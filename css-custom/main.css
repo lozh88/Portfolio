@@ -14,7 +14,9 @@ NAVIGATION
     font-family: 'Oxygen', sans-serif;
 }
 
-
+.navbar-default .nav > li.active>a, .navbar-default .nav>li.active>a:focus {
+  color: #6B273A!important;
+}
 
 /************************
 PAGES
@@ -56,14 +58,19 @@ header {
 h2 {
     font-size: 60px;
 }
-    
+
+.sub {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
     
 /************************
 COLOURS
 ************************/
 
 a .navbar-brand {
-    color: #000000;
+    color: #6B273A;
 }
 
 .bg-primary {
@@ -78,6 +85,11 @@ a .navbar-brand {
     border-color: #6B273A;
     background-color: #6B273A;
 }
+
+a:hover, a:focus {
+    color: #DB5379
+}
+
 /************************
 FOOTER
 ************************/
