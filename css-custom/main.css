@@ -6,9 +6,11 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-hr .primary {
-    color: #330411;
+hr, hr .primary {
+    border-color: #330411;
 }
+
+
     
 /************************
 NAVIGATION
@@ -46,12 +48,12 @@ NAVIGATION
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #6B273A;
+        color: #922846;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #6B273A;
+        color: #922846;
     }
 
     .navbar-default.affix .nav > li>a:hover,
@@ -59,6 +61,7 @@ NAVIGATION
         color: #511325;
     }
 }
+
 
 /************************
 PAGES
@@ -94,7 +97,7 @@ h1, h2 {
 }
 
 header {
-    background-image: url(http://placehold.it/1200x1267&text=Not+yet+an+image);
+    background-image: url(../img/bgroundPortfolioRS.png);
 }
 
 h2 {
@@ -112,29 +115,32 @@ COLOURS
 ************************/
 
 a .navbar-brand {
-    color: #6B273A;
+    color: #490B1D;
 }
 
 .bg-primary {
-    background-color: #6B273A;
+    background-color: #852742;
 }
 
-.navbar-default.affix .navbar-header .navbar-brand {
-    color: #700808;
+.navbar-default.affix .navbar-header {
+    color: #490B1D;
+}
+
+.btn-default:hover {
+    background: #F5CBD7;
+    color: #fff;
 }
 
 .btn-primary {
-    border-color: #6B273A;
-    background-color: #6B273A;
+    border-color: #852742;
+    background-color: #852742;
+}
+
+.btn-primary:hover {
+    background: #F5CBD7;
 }
 
 
-.bg-primary {
-    background-color: #f05f40;
-}
-a:hover, a:focus {
-    color: #DB5379
-}
 
 /************************
 FOOTER
