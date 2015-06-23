@@ -1,188 +1,51 @@
-/************************
-GENERAL
-************************/
-
 body {
-    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    color: #000;
 }
 
-hr, hr .primary {
-    border-color: #330411;
+.intro {
+    background: url(../img/deskHeader.jpg);
+    background-size: cover;
 }
 
-
-    
-/************************
-NAVIGATION
-************************/
-
-.nav {
-    font-family: 'Raleway', sans-serif;
+.content-section {
+    padding-top: 190px;
 }
 
-.navbar-default .nav > li.active>a,
-.navbar-default .nav>li.active>a:focus {
-    color: #A86477!important;
-    background-color: transparent;
-}
-@media(min-width:768px) {
-    .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-header .navbar-brand:hover,
-    .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
-    }
-
-    .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
-        color: #922846;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #922846;
-    }
-
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
-        color: #511325;
-    }
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #000;
 }
 
-
-/************************
-PAGES
-************************/
-
-.projects {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.subcat {
+    padding-top: 10px;
 }
 
-@media (min-width: 768px) {
-    .mail {
-        margin-left: 16.66666667%;
-    }
-    
-    .col-lg-4 {
-        width: 33.33333333%;
-        float: left;
-    }
+.section {
+    background-color: #000;
 }
 
-.contact-icon {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.btn-default {
+    border: 1px solid #E61EC0;
+    color: #E61EC0;
 }
 
-/************************
-HEADING
-************************/
-
-h1, h2 {
-    font-family: 'Oxygen', sans-serif;
+.btn-default:hover, .btn-default:focus {
+    border: 1px solid #E61EC0;
+    outline: 0 none;
+    color: #000;
+    background-color: #E61EC0;
 }
 
-header {
-    background-image: url(../img/bgroundPortfolioRS.png);
-}
-
-h2 {
-    font-size: 60px;
-}
-
-.sub {
-    font-family: 'Raleway', sans-serif;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-    
-/************************
-COLOURS
-************************/
-
-a .navbar-brand {
-    color: #490B1D;
-}
-
-.bg-primary {
-    background-color: #852742;
-}
-
-.navbar-default.affix .navbar-header {
-    color: #490B1D;
-}
-
-.btn-default:hover {
-    background: #F5CBD7;
+a {
     color: #fff;
 }
 
-.btn-primary {
-    border-color: #852742;
-    background-color: #852742;
+.strap-line {
+    text-transform: none;
+    margin-bottom: none;
 }
 
-.btn-primary:hover {
-    background: #F5CBD7;
-}
-
-
-
-/************************
-FOOTER
-************************/
-
-footer p {
-    text-align: center;
-    padding: 15px;
-}
-
-#contact {
-    padding-bottom: 50px;
-}
-
-ul {
- overflow: auto;
-}
- 
-ul li {
- list-style-type: none;
-}
- 
-ul li a i {
- background: #6B273A;
- color: #fff;
- width: 40px;
- height: 40px;
- border-radius: 20px;
- font-size: 50px;
- text-align: center;
- margin-right: 10px;
- padding-top: 15%;
-}
-
-.social-buttons {
-    margin-bottom: 30px;
-}
-
-.fa {
-    padding-top: 12px;
-}
-
-.fa-twitter {
-    margin-right: 0;
-}
