@@ -9,7 +9,7 @@ body {
 }
 
 .content-section {
-    padding-top: 190px;
+    padding-top: 120px;
 }
 
 h1,
@@ -31,12 +31,13 @@ h5 {
 .btn-default {
     border: 1px solid #E61EC0;
     color: #E61EC0;
+    border-radius: 10px;
 }
 
 .btn-default:hover, .btn-default:focus {
     border: 1px solid #E61EC0;
     outline: 0 none;
-    color: #000;
+    color: #fff;
     background-color: #E61EC0;
 }
 
@@ -44,12 +45,16 @@ h5 {
     color: #000;
 }
 
+.btn-circle:hover {
+    color: #E61EC0;
+}
+
 .btn {
-    transition: all 2s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s;
 }
 
 a {
-    color: #fff;
+    color: #;
 }
 
 .strap-line {
@@ -61,3 +66,16 @@ a {
     color: #000;
 }
 
+.second-row {
+    margin-top: 10px;
+}
+
+.map {
+    background-color: #444;
+    opacity: 60%;
+}
+
+.still > p {
+    padding-top: 5px;
+    
+}
