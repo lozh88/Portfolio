@@ -3,7 +3,7 @@
 @mixin progressbar {
     text-align: left;
     padding: 3px 20px;
-    background: #042c3c;
+    background: #93B4AD;
     //text-transform: uppercase; 
     font-weight: bold;
 }
@@ -18,19 +18,22 @@
 /****** color scheme ******/
 
 $primary-color: #042c3c;
-$secondary-color: #E61EC0;
+$secondary-color: #BD4457;
 $tertiary-color: #af0;
 $base: #fff;
 $pop: #000;
 
 
 body {
-    background-color: $base;
-    color: $pop;
+    background-color: #fff;//#F7F3F4;
+    p {
+        color: #000;
+        font-size: 26px;
+    }
 }
 
 .intro {
-    background: url();
+    background-image: url(../img/washi.jpg);
     background-size: cover;
 }
 
@@ -48,10 +51,48 @@ h3,
 h4,
 h5 {
     color: $pop;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar a {
+    color: #000;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 2px;
+}
+.nav-width {
+    width: 100%;
+}
+.navbar-custom .nav li.active {
+    color: $pop;
+    // border-bottom: 2px solid #000;
+}
+
+.navbar-custom .nav li.active a:hover {
+    font-weight: bold;
+    color: $pop;
+}
+
+.navbar-custom .nav li a:hover {
+    color: $secondary-color;
+} 
+
+.navbar.navbar-custom.navbar-fixed-top.top-nav-collapse {
+    background-color: #fff; //#F7F3F4;
+}
+
+.navbar-header {
+    background-color: #000;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .subcat {
     padding-top: 10px;
+    font-size: 22px;
 }
 
 .section {
@@ -80,11 +121,7 @@ h5 {
 }
 
 .btn {
-    transition: all 1s ease-in-out 0s;
-}
-
-a {
-    color: $pop;
+    transition: all .3s ease-in-out 0s;
 }
 
 .strap-line {
@@ -100,10 +137,8 @@ a {
     margin-top: 10px;
 }
 
-.map {
-    background-color: #444;
-    opacity: 60%;
-    margin-top: 40px;
+.content-section p {
+    font-size: 20px
 }
 
 .still > p {
@@ -122,7 +157,7 @@ a {
 #progress {
     font-family: sans-serif;
     span {
-        color: $tertiary-color;
+        color: $pop;
     }
 }
 
@@ -131,7 +166,7 @@ a {
     height: 30px;
     width: 350px;
     border-radius: 15px;
-    margin: 0 auto 40px auto;
+    margin: 20px auto;
     overflow: hidden;
     background-color: #eee;
 }
@@ -192,6 +227,13 @@ a {
 
 .copyright p {
     font-size: 12px;
+    color: $base;
+}
+
+.logo {
+    width: 100px;
+    opacity: .4;
+    margin-bottom: 15px;
 }
 
 footer {
@@ -204,6 +246,9 @@ footer {
     margin: auto auto;
 }
 
+.form-control {
+    border-radius: 0;
+}
 // @media screen and (max-width: 900px) {
 //     .field {
 //         width: 100%;

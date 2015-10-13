@@ -1,15 +1,13 @@
 /****** mixins ******/
 /****** color scheme ******/
 body {
-  background-color: white;
-  color: black; }
-
-.intro-body {
-  background-color: rgba(200, 0, 10, .4);
-}
+  background-color: #fff; }
+  body p {
+    color: #000;
+    font-size: 26px; }
 
 .intro {
-  background: url();
+  background-image: url(../img/washi.jpg);
   background-size: cover; }
 
 .content-section {
@@ -20,51 +18,77 @@ h2,
 h3,
 h4,
 h5 {
-  color: black; }
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif; }
+
+.navbar a {
+  color: #000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 2px; }
+
+.nav-width {
+  width: 100%; }
+
+.navbar-custom .nav li.active {
+  color: #000; }
+
+.navbar-custom .nav li.active a:hover {
+  font-weight: bold;
+  color: #000; }
+
+.navbar-custom .nav li a:hover {
+  color: #BD4457; }
+
+.navbar.navbar-custom.navbar-fixed-top.top-nav-collapse {
+  background-color: #fff; }
+
+.navbar-header {
+  background-color: #000; }
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif; }
 
 .subcat {
-  padding-top: 10px; }
+  padding-top: 10px;
+  font-size: 22px; }
 
 .section {
-  background-color: black; }
+  background-color: #000; }
 
 .btn-default {
-  border: 1px solid #e61ec0;
-  color: #e61ec0;
+  border: 1px solid #BD4457;
+  color: #BD4457;
   border-radius: 10px; }
 
 .btn-default:hover, .btn-default:focus {
-  border: 1px solid #e61ec0;
+  border: 1px solid #BD4457;
   outline: 0 none;
-  color: white;
-  background-color: #e61ec0; }
+  color: #fff;
+  background-color: #BD4457; }
 
 .btn-circle {
-  color: black; }
+  color: #000; }
 
 .btn-circle:hover {
-  color: #e61ec0; }
+  color: #BD4457; }
 
 .btn {
-  transition: all 1s ease-in-out 0s; }
-
-a {
-  color: black; }
+  transition: all .3s ease-in-out 0s; }
 
 .strap-line {
   text-transform: none;
   margin-bottom: none; }
 
 .intro-text {
-  color: black; }
+  color: #000; }
 
 .second-row {
   margin-top: 10px; }
 
-.map {
-  background-color: #444;
-  opacity: 60%;
-  margin-top: 40px; }
+.content-section p {
+  font-size: 20px; }
 
 .still > p {
   padding-top: 5px; }
@@ -78,14 +102,14 @@ a {
 #progress {
   font-family: sans-serif; }
   #progress span {
-    color: #aaff00; }
+    color: #000; }
 
 .progress-bar {
-  border: 3px solid black;
+  border: 3px solid #000;
   height: 30px;
   width: 350px;
   border-radius: 15px;
-  margin: 0 auto 40px auto;
+  margin: 20px auto;
   overflow: hidden;
   background-color: #eee; }
 
@@ -100,7 +124,7 @@ a {
 #progress-9 {
   text-align: left;
   padding: 3px 20px;
-  background: #042c3c;
+  background: #93B4AD;
   font-weight: bold; }
 
 .form-left {
@@ -108,13 +132,13 @@ a {
 
 #contact {
   background: #042c3c;
-  color: black;
+  color: #000;
   padding: 20px; }
   #contact li {
     list-style-type: none; }
   #contact h2,
   #contact p {
-    color: white; }
+    color: #fff; }
 
 .field {
   height: 40px;
@@ -127,29 +151,35 @@ a {
     font-style: italic; }
 
 .textarea {
-  min-height: 140px;
-  width: 100%
-}
+  min-height: 160px;
+  width: 95%; }
 
 .submit {
-  background-color: #aaff00;
+  background-color: #af0;
   border: none;
   height: 40px;
   width: 100px;
   float: right;
-  margin: 10px 0px; }
-
-.form-control {
-  border-radius: 0;
-}
+  margin: 10px 10px; }
 
 .copyright p {
-  font-size: 12px; }
+  font-size: 12px;
+  color: #fff; }
+
+.logo {
+  width: 100px;
+  opacity: .4;
+  margin-bottom: 15px; }
 
 footer {
   padding: 10px; }
 
 .site-footer {
   background-color: #042c3c;
-  color: white;
+  color: #fff;
   margin: auto auto; }
+
+.form-control {
+  border-radius: 0; }
+
+/*# sourceMappingURL=main.css.map */
