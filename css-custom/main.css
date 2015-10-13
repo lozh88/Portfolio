@@ -1,81 +1,155 @@
+/****** mixins ******/
+/****** color scheme ******/
 body {
-    background-color: #fff;
-    color: #000;
+  background-color: white;
+  color: black; }
+
+.intro-body {
+  background-color: rgba(200, 0, 10, .4);
 }
 
 .intro {
-    background: url();
-    background-size: cover;
-}
+  background: url();
+  background-size: cover; }
 
 .content-section {
-    padding-top: 120px;
-}
+  padding-top: 120px; }
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-    color: #000;
-}
+  color: black; }
 
 .subcat {
-    padding-top: 10px;
-}
+  padding-top: 10px; }
 
 .section {
-    background-color: #000;
-}
+  background-color: black; }
 
 .btn-default {
-    border: 1px solid #E61EC0;
-    color: #E61EC0;
-    border-radius: 10px;
-}
+  border: 1px solid #e61ec0;
+  color: #e61ec0;
+  border-radius: 10px; }
 
 .btn-default:hover, .btn-default:focus {
-    border: 1px solid #E61EC0;
-    outline: 0 none;
-    color: #fff;
-    background-color: #E61EC0;
-}
+  border: 1px solid #e61ec0;
+  outline: 0 none;
+  color: white;
+  background-color: #e61ec0; }
 
 .btn-circle {
-    color: #000;
-}
+  color: black; }
 
 .btn-circle:hover {
-    color: #E61EC0;
-}
+  color: #e61ec0; }
 
 .btn {
-    transition: all 1s ease-in-out 0s;
-}
+  transition: all 1s ease-in-out 0s; }
 
 a {
-    color: #;
-}
+  color: black; }
 
 .strap-line {
-    text-transform: none;
-    margin-bottom: none;
-}
+  text-transform: none;
+  margin-bottom: none; }
 
 .intro-text {
-    color: #000;
-}
+  color: black; }
 
 .second-row {
-    margin-top: 10px;
-}
+  margin-top: 10px; }
 
 .map {
-    background-color: #444;
-    opacity: 60%;
-}
+  background-color: #444;
+  opacity: 60%;
+  margin-top: 40px; }
 
 .still > p {
-    padding-top: 5px;
-    
+  padding-top: 5px; }
+
+.project {
+  margin: 25px auto 10px auto; }
+
+.still p {
+  font-size: 16px; }
+
+#progress {
+  font-family: sans-serif; }
+  #progress span {
+    color: #aaff00; }
+
+.progress-bar {
+  border: 3px solid black;
+  height: 30px;
+  width: 350px;
+  border-radius: 15px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+  background-color: #eee; }
+
+#progress-1,
+#progress-2,
+#progress-3,
+#progress-4,
+#progress-5,
+#progress-6,
+#progress-7,
+#progress-8,
+#progress-9 {
+  text-align: left;
+  padding: 3px 20px;
+  background: #042c3c;
+  font-weight: bold; }
+
+.form-left {
+  float: right; }
+
+#contact {
+  background: #042c3c;
+  color: black;
+  padding: 20px; }
+  #contact li {
+    list-style-type: none; }
+  #contact h2,
+  #contact p {
+    color: white; }
+
+.field {
+  height: 40px;
+  width: 95%;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  margin: 10px 0; }
+  .field [placeholder] {
+    font-style: italic; }
+
+.textarea {
+  min-height: 140px;
+  width: 100%
 }
+
+.submit {
+  background-color: #aaff00;
+  border: none;
+  height: 40px;
+  width: 100px;
+  float: right;
+  margin: 10px 0px; }
+
+.form-control {
+  border-radius: 0;
+}
+
+.copyright p {
+  font-size: 12px; }
+
+footer {
+  padding: 10px; }
+
+.site-footer {
+  background-color: #042c3c;
+  color: white;
+  margin: auto auto; }

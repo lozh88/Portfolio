@@ -1,0 +1,212 @@
+/****** mixins ******/
+
+@mixin progressbar {
+    text-align: left;
+    padding: 3px 20px;
+    background: #042c3c;
+    //text-transform: uppercase; 
+    font-weight: bold;
+}
+
+@mixin inputbox {
+    height: 40px;
+    width: 95%;
+    margin: 10px;
+}
+
+
+/****** color scheme ******/
+
+$primary-color: #042c3c;
+$secondary-color: #E61EC0;
+$tertiary-color: #af0;
+$base: #fff;
+$pop: #000;
+
+
+body {
+    background-color: $base;
+    color: $pop;
+}
+
+.intro {
+    background: url();
+    background-size: cover;
+}
+
+.content-section {
+    padding-top: 120px;
+}
+
+// .alternate-bg {
+//     background-color: ;
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: $pop;
+}
+
+.subcat {
+    padding-top: 10px;
+}
+
+.section {
+    background-color: $pop;
+}
+
+.btn-default {
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+    border-radius: 10px;
+}
+
+.btn-default:hover, .btn-default:focus {
+    border: 1px solid $secondary-color;
+    outline: 0 none;
+    color: $base;
+    background-color: $secondary-color;
+}
+
+.btn-circle {
+    color: $pop;
+}
+
+.btn-circle:hover {
+    color: $secondary-color;
+}
+
+.btn {
+    transition: all 1s ease-in-out 0s;
+}
+
+a {
+    color: $pop;
+}
+
+.strap-line {
+    text-transform: none;
+    margin-bottom: none;
+}
+
+.intro-text {
+    color: $pop;
+}
+
+.second-row {
+    margin-top: 10px;
+}
+
+.map {
+    background-color: #444;
+    opacity: 60%;
+    margin-top: 40px;
+}
+
+.still > p {
+    padding-top: 5px;
+    
+}
+
+.project {
+    margin: 25px auto 10px auto;
+}
+
+.still p {
+    font-size: 16px;
+}
+
+#progress {
+    font-family: sans-serif;
+    span {
+        color: $tertiary-color;
+    }
+}
+
+.progress-bar {
+    border: 3px solid $pop;
+    height: 30px;
+    width: 350px;
+    border-radius: 15px;
+    margin: 0 auto 40px auto;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+#progress-1,
+#progress-2,
+#progress-3,
+#progress-4,
+#progress-5,
+#progress-6,
+#progress-7,
+#progress-8,
+#progress-9 {
+    @include progressbar;
+}
+
+.form-left {
+    float: right;
+}
+
+#contact {
+    background: $primary-color;
+    color: $pop;
+    padding: 20px;
+    li {
+        list-style-type: none;
+    }
+    h2,
+    p {
+        color: $base;
+    }
+}
+
+.field {
+    @include inputbox;
+    padding: 10px;
+    border: none;
+    margin: 10px 0;
+    [placeholder] {
+        font-style: italic;
+    }
+}
+
+.textarea {
+    min-height: 160px;
+    width: 95%;
+    // float: right;
+}
+
+.submit {
+    background-color: $tertiary-color;
+    border: none;
+    height: 40px;
+    width: 100px;
+    float: right;
+    margin: 10px 10px;
+}
+
+.copyright p {
+    font-size: 12px;
+}
+
+footer {
+    padding: 10px;
+}
+
+.site-footer {
+    background-color: $primary-color;
+    color: $base;
+    margin: auto auto;
+}
+
+// @media screen and (max-width: 900px) {
+//     .field {
+//         width: 100%;
+//     }
+        
+// }
