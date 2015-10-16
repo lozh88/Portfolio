@@ -1,17 +1,30 @@
 /****** mixins ******/
+/****** fonts ******/
 /****** color scheme ******/
 body {
   background-color: #fff; }
   body p {
     color: #000;
-    font-size: 26px; }
+    font-size: 26px;
+    font-family: "Titillium Web", sans-serif; }
 
 .intro {
-  background-image: url(../img/washi.jpg);
+  background-color: #fff;
   background-size: cover; }
 
+/* .title {
+    border: 2px solid #000;
+    padding-bottom: 20px;
+    border-radius: 4px;
+} */
 .content-section {
   padding-top: 120px; }
+
+.visuals-section {
+  padding-top: 20px; }
+  .visuals-section p {
+    font-size: 10px;
+    font-style: italic; }
 
 h1,
 h2,
@@ -19,11 +32,11 @@ h3,
 h4,
 h5 {
   color: #000;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 .navbar a {
   color: #000;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: bold;
   margin: 2px; }
@@ -48,7 +61,7 @@ h5 {
   background-color: #000; }
 
 h2 {
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 .subcat {
   padding-top: 10px;
@@ -58,15 +71,15 @@ h2 {
   background-color: #000; }
 
 .btn-default {
-  border: 1px solid #BD4457;
-  color: #BD4457;
-  border-radius: 10px; }
+  background-color: #BD4457;
+  color: #fff;
+  border-radius: none;
+  box-shadow: 2px 2px #bbb; }
 
 .btn-default:hover, .btn-default:focus {
-  border: 1px solid #BD4457;
   outline: 0 none;
   color: #fff;
-  background-color: #BD4457; }
+  background-color: #FF0051; }
 
 .btn-circle {
   color: #000; }
@@ -150,17 +163,24 @@ h2 {
   .field [placeholder] {
     font-style: italic; }
 
-.textarea {
-  min-height: 160px;
-  width: 95%; }
+textarea {
+  width: 100%;
+  min-height: 142px; }
 
 .submit {
-  background-color: #af0;
+  background-color: #BD4457;
   border: none;
   height: 40px;
   width: 100px;
   float: right;
-  margin: 10px 10px; }
+  margin: 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff; }
+  .submit:hover {
+    background-color: #FF0051;
+    transition: background-color .4s ease-in-out .2s; }
 
 .copyright p {
   font-size: 12px;
@@ -168,7 +188,7 @@ h2 {
 
 .logo {
   width: 100px;
-  opacity: .4;
+  opacity: .8;
   margin-bottom: 15px; }
 
 footer {
@@ -181,5 +201,8 @@ footer {
 
 .form-control {
   border-radius: 0; }
+
+#message div {
+  padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

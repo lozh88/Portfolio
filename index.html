@@ -1,5 +1,21 @@
+<!-- 
+<?php
 
-<!DOCTYPE html>
+if($_POST["submit"]) {
+    $recipient="lauren.kitson88@gmail.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?> --><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -21,7 +37,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,300,300italic' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700,300' rel='stylesheet' type='text/css'>
     <link href="script/contact.php" rel="">
@@ -36,7 +52,7 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+    
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container nav-width">
@@ -80,23 +96,22 @@
             <div class="bg-1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-8 col-md-offset-2 title">
                             <h2 class="brand-heading"><span class="light">Loz</span> Kitson</h2>
                             <p class="intro-text">Front-end Developer</p>
-                            <a href="#about" class="btn btn-default btn-lg page-scroll">Shall I put the kettle on?</a>
+                            <a href="#about" class="btn btn-default btn-lg page-scroll">Let's take a walk</a>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
     <!-- About Section -->
     <section  data-sr="wait .1s" id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>I like beautiful things</h2>
+                <h2>I like beautiful things.</h2>
                 <p>I am <em>passionate</em> about creativity. Elegant positioning, well-engineered whitespace and inspiring imagery excites me! Coming from an Arts background with a degree in Engineering I love standards and communicating ideas effectively.</p>
                 <p>And the Web is such a <em>wonderous</em> place to do it!</p>
                 <p>With so many cool people to interact with and the <em>biggest</em> blank canvas I have ever seen, I am ready to splash some style all over it!</p>
@@ -104,12 +119,37 @@
         </div>
     </section>
 
+    <section data-sr="wait .1s" id="skills" class="container content-section text-center">
+        <div class="visuals-section alternate-bg">
+            <div class="container">
+                <h2>Because I'm not just a pretty interface.</h2>
+                <div class="row">
+                    <div class="col-md-3 ui">
+                       <i class="fa fa-users fa-5x" style="color: #000; padding: 20px; font-size: 8em" ></i>
+                        <p>A teamplayer working to smash targets and deliver high quality products</p>
+                    </div>
+                    <div class="col-md-3 story">
+                        <i class="fa fa-heart-o fa-5x" style="color: #000; padding: 20px; font-size: 8em" ></i>
+                        <p>A lover of design and creating beautiful UX</p>
+                    </div>
+                    <div class="col-md-3 frame">
+                        <i class="fa fa-code fa-5x" style="color: #000; padding: 20px; font-size: 8em" ></i>
+                        <p>A solid foundation built on HTML5, CSS3 and JavaScript</p>
+                    </div>
+                    <div class="col-md-3 create">
+                        <i class="fa fa-rocket fa-5x" style="color: #000; padding: 20px; font-size: 8em" ></i>
+                        <p>A whirlwind of creativity that will blow your socks off</p>
+                    </div>
+                </div>
+                <!-- progress bars went here -->
+            </div>
+        </div>
+    </section>
     <!-- Skills Section -->
-    <section data-sr="wait .1s" id="skills" class="content-section text-center">
+    <section data-sr="wait .2s" class="content-section text-center">
         <div class="skills-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Because I'm not just a pretty interface.</h2>
                     
                     <img class="logo justit" data-sr="wait 1s" src="img/just-it.png">
                     <span data-sr="wait .25s"><h4 class="subcat"><span class="light">[2015] </span>Development Professional Programme, Just IT</h4>
@@ -125,81 +165,8 @@
         </div>
     </section>
 
-    <section data-sr="wait .1s" id="progress" class="content-section text-center">
-        <div class="skills-section alternate-bg">
-            <div class="container">
-                <div data-sr="wait .3s" class="col-md-4">
-                    <h4>Creative</h4>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-1" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                            <span>Design style</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                            <span>Attention to detail</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-3" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                            <span>Photoshop</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-3" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                            <span>Imagination</span>
-                        </div>
-                    </div>
-                </div>
-                <div data-sr="wait .5s"class="col-md-4">
-                    <h4>Technical</h4>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-4" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span>HTML5</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-5" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-6" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-6" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                            <span>Java</span>
-                        </div>
-                    </div>
-                </div>
-                <div data-sr="wait .7s"class="col-md-4">
-                    <h4>Interpersonal</h4>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-8" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
-                            <span>Teamwork</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-7" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-                            <span>Communications</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-9" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                            <span>Works under pressure</span>
-                        </div>
-                    </div>
-                    <div class="img-responsive progress-bar">
-                        <div id="progress-6" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                            <span>Problem solving</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- visuals showing skills -->
+    
     <!-- My Work Section -->
     <section data-sr="wait .1s" id="mywork" class="content-section text-center">
         <div class="skills-section">
@@ -227,9 +194,9 @@
                             <h4 class="project">Website name</h4>
                             <p><em>Type of project</em></p>
                             <p class="project-info"></p>
-                        </div>
+                        </div> -->
 					</div>
-				</div> -->
+				</div>
                 <!-- <div class="row second-row">
                     <div class="col-lg-12">
                         <div class="col-md-4 still" id="#">
@@ -263,41 +230,41 @@
         <div class="row contact-block">
 
             <div class="col-md-12">
-                <form id="form1" name="form1" autocomplete="off" enctype="multipart/form-data" method="post" validate action="">
+                <form id="form1" name="form1" autocomplete="off" enctype="text/plain" method="post" validate action="mailto:lauren.kitson88@gmail.com">
                     <header id="header" class="info">
                         <h2>Contact.</h2>
                         <p>I would love to hear from you. Get in touch to discuss projects or just say hello!</p>
                     </header>
                     <div class="clearfix">
                         <ul class="col-md-6">
-                            <li>
+                            <div>
                                 <label for="name"></label>
-                                
                                 <input id="name" name="name" class="form-control" type="text" placeholder="What is your name?" maxlength="255" tabindex="1">
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <label for="email"></label>
                                 <input id="email" name="email" class="form-control" type="email" placeholder="What is your email?" maxlength="" tabindex="2">
-                            </li>
-                            <li>
+                            </div>
+                            <div>
                                 <label for="subject"></label>
                                 <select id="subject" name="subject" class="form-control" tabindex="3" name="field3">
-                                    <option value="Hello"selected>Just saying hello</option>
+                                    <option value="select"selected>Please select</option>
+                                    <option value="Hello">Just saying hello</option>
                                     <option value="Job opportunity">Job opportunity</option>
                                 </select>
-                            </li>
+                            </div>
                         </ul>
                         <ul class="col-md-6">
-                            <li>
+                            <div>
                                 <label for="message"></label>
                                 <textarea id="message" name="message" class="form-control textarea" placeholder="So, what's news?" tabindex="4"></textarea>
-                            </li>
-                            <li class="button">
+                            </div>
+                            <div class="button">
                                 <div>
                                     <input id="submit" name="submit" class="submit" type="submit" value="Whooosh!" tabindex="5
                                     "></input>
                                 </div>
-                            </li>
+                            </div>
                             
                         </ul>
                         <div class="col-md-6">
@@ -371,8 +338,6 @@
     });
 
     </script>
-
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
     <script src='script/scrollReveal.js'></script>
     <script>

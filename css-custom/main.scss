@@ -14,6 +14,11 @@
     margin: 10px;
 }
 
+/****** fonts ******/
+
+$main-font: 'Josefin Sans', sans-serif;
+$paragraph: 'Titillium Web', sans-serif;
+
 
 /****** color scheme ******/
 
@@ -29,21 +34,31 @@ body {
     p {
         color: #000;
         font-size: 26px;
+        font-family: $paragraph;
     }
 }
 
 .intro {
-    background-image: url(../img/washi.jpg);
+    background-color: #fff;
     background-size: cover;
 }
 
+/* .title {
+    border: 2px solid #000;
+    padding-bottom: 20px;
+    border-radius: 4px;
+} */
 .content-section {
     padding-top: 120px;
 }
 
-// .alternate-bg {
-//     background-color: ;
-// }
+.visuals-section {
+    padding-top: 20px;
+    p {
+    font-size: 10px;
+    font-style: italic;
+    }
+}
 
 h1,
 h2,
@@ -51,12 +66,12 @@ h3,
 h4,
 h5 {
     color: $pop;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $main-font;
 }
 
 .navbar a {
     color: #000;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $main-font;
     font-size: 16px;
     font-weight: bold;
     margin: 2px;
@@ -87,7 +102,7 @@ h5 {
 }
 
 h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $main-font;
 }
 
 .subcat {
@@ -100,16 +115,17 @@ h2 {
 }
 
 .btn-default {
-    border: 1px solid $secondary-color;
-    color: $secondary-color;
-    border-radius: 10px;
+    background-color: $secondary-color;
+    color: #fff;
+    border-radius: none;
+    box-shadow: 2px 2px #bbb;
 }
 
 .btn-default:hover, .btn-default:focus {
-    border: 1px solid $secondary-color;
+    // border: 1px solid $secondary-color;
     outline: 0 none;
     color: $base;
-    background-color: $secondary-color;
+    background-color: #FF0051;
 }
 
 .btn-circle {
@@ -210,19 +226,26 @@ h2 {
     }
 }
 
-.textarea {
-    min-height: 160px;
-    width: 95%;
-    // float: right;
+textarea {
+    width: 100%;
+    min-height: 142px
 }
 
 .submit {
-    background-color: $tertiary-color;
+    background-color: $secondary-color;
     border: none;
     height: 40px;
     width: 100px;
     float: right;
-    margin: 10px 10px;
+    margin: 20px 0;
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: #fff;
+    &:hover {
+        background-color: #FF0051;
+        transition: background-color .4s ease-in-out .2s;
+    }
 }
 
 .copyright p {
@@ -232,7 +255,7 @@ h2 {
 
 .logo {
     width: 100px;
-    opacity: .4;
+    opacity: .8;
     margin-bottom: 15px;
 }
 
@@ -249,6 +272,11 @@ footer {
 .form-control {
     border-radius: 0;
 }
+
+#message div {
+    padding: 0;
+}
+
 // @media screen and (max-width: 900px) {
 //     .field {
 //         width: 100%;
