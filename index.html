@@ -1,4 +1,4 @@
-<!-- 
+ 
 <?php
 
 if($_POST["submit"]) {
@@ -12,10 +12,11 @@ if($_POST["submit"]) {
 
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
 
-?> --><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -230,7 +231,7 @@ if($_POST["submit"]) {
         <div class="row contact-block">
 
             <div class="col-md-12">
-                <form id="form1" name="form1" autocomplete="off" enctype="text/plain" method="post" validate action="mailto:lauren.kitson88@gmail.com">
+                <form id="form1" name="form1" autocomplete="off" enctype="text/plain" method="post" validate action="">
                     <header id="header" class="info">
                         <h2>Contact.</h2>
                         <p>I would love to hear from you. Get in touch to discuss projects or just say hello!</p>
@@ -259,6 +260,7 @@ if($_POST["submit"]) {
                                 <label for="message"></label>
                                 <textarea id="message" name="message" class="form-control textarea" placeholder="So, what's news?" tabindex="4"></textarea>
                             </div>
+                            
                             <div class="button">
                                 <div>
                                     <input id="submit" name="submit" class="submit" type="submit" value="Whooosh!" tabindex="5
