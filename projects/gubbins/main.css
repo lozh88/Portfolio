@@ -1,0 +1,174 @@
+/*********************************
+************ GENERAL *************
+*********************************/
+body {
+  font-family: "Special Elite", serif;
+  background-image: url(img/crumpled-paper.png);
+  color: #000;
+  padding-top: 10px; }
+
+p {
+  font-size: 20px;
+  font-family: "Special Elite", serif; }
+
+h1 {
+  font-size: 80px;
+  line-height: 65px;
+  font-weight: bold;
+  color: #000; }
+
+.smaller {
+  font-size: 50px;
+  font-weight: lighter; }
+
+#title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-family: "Special Elite", serif; }
+
+.aside {
+  height: 425px;
+  z-index: 1; }
+
+footer p {
+  text-align: right;
+  font-size: 12px; }
+
+.window {
+  margin-top: 5%; }
+
+/*********************************
+*********** NAVIGATION ***********
+*********************************/
+.navbar-inverse {
+  background-color: transparent;
+  border: none; }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-family: "Special Elite", serif; }
+
+.navbar-collapse {
+  padding-left: 0; }
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 8px;
+  background-color: #0CA199;
+  border-bottom: 3px solid #00CCC2;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 20px; }
+  li:first-child {
+    margin-left: 0; }
+  li:hover {
+    background-color: #FF19D6;
+    border-bottom: 3px solid #12B2AB;
+    transition: all 0.2s ease; }
+
+/*********************************
+************ DIAGRAM *************
+*********************************/
+.bubble {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 10px; }
+
+#div-one {
+  position: relative;
+  top: -20px;
+  right: -5px;
+  background: url(img/Scandrawing.png) no-repeat;
+  padding: 20px; }
+
+#div-two {
+  position: relative;
+  height: 130px;
+  width: 100px;
+  top: -400px;
+  right: 6px;
+  background: url(img/foundation.png) no-repeat; }
+
+#div-three {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 0px;
+  right: 5px;
+  background: url(img/floor.png) no-repeat; }
+
+#div-four {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  top: -445px;
+  right: -344px;
+  background: url(img/girder.png) no-repeat; }
+
+/* #div-five {
+	position: absolute;
+	height: 60px;
+	width: 60px;
+	top: 300px;
+	right: 130px;
+	background: url(https://placeimg.com/300/300/tech) no-repeat;
+} */
+.main-window {
+  position: relative;
+  margin: -40px 10px 10px 10px;
+  top: 50px;
+  right: -100px;
+  height: 458px;
+  width: 300px;
+  z-index: 1;
+  background: url(img/complete-structure.png);
+  transform: scale(1.2); }
+
+/*********************************
+********* MEDIA QUERIEES *********
+*********************************/
+@media (min-width: 1170px) {
+  .container {
+    width: 1200px; } }
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 40px;
+    line-height: 20px;
+    margin-top: 25px; }
+
+  .smaller {
+    font-size: 30px; }
+
+  .title {
+    font-size: 20px; }
+
+  p {
+    font-size: 15px; }
+
+  .explanation {
+    width: 25%;
+    position: absolute;
+    margin-right: 5px; }
+
+  .aside {
+    width: 75%;
+    float: right; }
+
+  .head {
+    float: left; }
+
+  footer {
+    margin-top: 30px; }
+
+  .main-window {
+    transform: scale(1); } }
+/* @media screen and (max-height: 850px) {
+	.main-window {
+		transform: scale(.9);
+	}
+} */
+
+/*# sourceMappingURL=main.css.map */

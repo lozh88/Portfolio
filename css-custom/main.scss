@@ -76,12 +76,17 @@ h5 {
     font-weight: bold;
     margin: 2px;
 }
+
 .nav-width {
     width: 100%;
 }
 .navbar-custom .nav li.active {
     color: $pop;
     // border-bottom: 2px solid #000;
+}
+
+.navbar-toggle {
+    background-color: #000;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -98,7 +103,7 @@ h5 {
 }
 
 .navbar-header {
-    background-color: #000;
+    background-color: #fff;
 }
 
 h2 {
@@ -187,7 +192,7 @@ h2 {
     background-color: #eee;
 }
 
-#progress-1,
+/* #progress-1,
 #progress-2,
 #progress-3,
 #progress-4,
@@ -197,7 +202,7 @@ h2 {
 #progress-8,
 #progress-9 {
     @include progressbar;
-}
+} */
 
 .form-left {
     float: right;

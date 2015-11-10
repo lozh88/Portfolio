@@ -1,0 +1,213 @@
+@mixin contact-spec {
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+@mixin shadow {
+	text-shadow: 2px 2px 10px #000;
+	-webkit-text-shadow: 2px 2px 10px #000;
+	-moz-text-shadow: 2px 2px 10px #000;
+	-o-text-shadow: 2px 2px 10px #000;
+}
+
+body {
+	font-family: 'Antic Didone', serif;
+	background-color: #EBEAEC;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 10px;
+}
+
+// .business-header {
+// 	height: 550px;
+// 	background: no-repeat center/100% url('../img/aliSutherlandCover.jpg');
+// }
+
+.business-header {
+    height: 560px;
+    background: url('../img/aliSutherlandCover.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1 {
+	@include shadow;
+	margin-top: 15%;
+	font-size: 65px;
+	font-weight: bold;
+	color: #fff;
+}
+
+p {
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+nav {
+	text-transform: lowercase;
+}
+
+h2#sub-title {
+	@include shadow;
+	color: #fff;
+	margin-top: 10px;
+	font-size: 40px;
+}
+
+div[class=heading] {
+	margin-top: 100px;
+}
+
+#contact > p {
+		margin-top: 10px;
+	}
+
+.heading {
+	margin-top: 80px;
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
+}
+
+.heading-2 {
+	margin-top: 10px;
+}
+
+.head-credit {
+	text-align: right;
+	font-weight: lighter;
+}
+
+.bio {
+	padding: 5px 100px;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.emphasis {
+	font-size: 20px;
+	font-style: italic;
+}
+
+.venue > p {
+		margin-top: 10px;
+}
+
+#contact {
+	font-size: 18px;
+	background-color: #eee;
+	margin-top: 5%;
+	h2 {
+		margin-top: 10px;
+	}
+}
+
+.right {
+	@include contact-spec;
+	text-align: right;
+}
+
+.left {
+	@include contact-spec;
+	text-align: left;	
+}
+
+h3 {
+	padding-top: 20px;
+}
+
+.image-size {
+	margin: 2.5px auto;
+	width: 100%;
+	padding: 5px;
+}
+
+a {
+	color: #000;
+}
+
+.gallery > div {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+em {
+	font-weight: bold;
+}
+
+button {
+	border-radius:15px;
+}
+
+.img-credit {
+	position: absolute;
+	left: 18px;
+	bottom: 10px;
+	font-size: 12px;
+	z-index: -1;
+	color: #000;
+	text-align: left;
+}
+
+.line-move {
+	height: 2px;
+	width: 0px;
+	background-color: #000;
+	margin: 0 auto;
+}
+
+
+/*---------------------------------
+			MEDIA QUERIES
+---------------------------------*/
+
+// @media (min-width: 400px and max-width: 766px) {
+// 	img {
+// 		width: 100%;
+// 	}
+// }
+
+@media screen and (max-width: 768px) {
+	.buy {
+		height: 60px;
+		width: 150px;
+		font-size: 14px;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.heading {
+		margin-top: 15%;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	h2#subtitle {
+		font-size: 30px;
+	}
+
+	#contact {
+		margin-top: 20px;
+	}
+
+	.venue {
+		background-color: ;
+		margin: 10px;
+		padding: 10px 0;
+		
+	}
+
+
+}
