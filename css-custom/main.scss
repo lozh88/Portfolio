@@ -76,17 +76,12 @@ h5 {
     font-weight: bold;
     margin: 2px;
 }
-
 .nav-width {
     width: 100%;
 }
 .navbar-custom .nav li.active {
     color: $pop;
     // border-bottom: 2px solid #000;
-}
-
-.navbar-toggle {
-    background-color: #000;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -103,7 +98,7 @@ h5 {
 }
 
 .navbar-header {
-    background-color: #fff;
+    background-color: #000;
 }
 
 h2 {
@@ -192,7 +187,7 @@ h2 {
     background-color: #eee;
 }
 
-/* #progress-1,
+#progress-1,
 #progress-2,
 #progress-3,
 #progress-4,
@@ -202,7 +197,7 @@ h2 {
 #progress-8,
 #progress-9 {
     @include progressbar;
-} */
+}
 
 .form-left {
     float: right;
@@ -282,9 +277,8 @@ footer {
     padding: 0;
 }
 
-// @media screen and (max-width: 900px) {
-//     .field {
-//         width: 100%;
-//     }
-        
-// }
+/* @media screen and (max-width: 500px) {
+    .intro .intro-body .brand-heading {
+    font-size: 80px;
+    }
+} */

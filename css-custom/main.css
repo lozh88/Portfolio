@@ -47,9 +47,6 @@ h5 {
 .navbar-custom .nav li.active {
   color: #000; }
 
-.navbar-toggle {
-  background-color: #000; }
-
 .navbar-custom .nav li.active a:hover {
   font-weight: bold;
   color: #000; }
@@ -61,7 +58,7 @@ h5 {
   background-color: #fff; }
 
 .navbar-header {
-  background-color: #fff; }
+  background-color: #000; }
 
 h2 {
   font-family: "Josefin Sans", sans-serif; }
@@ -129,7 +126,7 @@ h2 {
   overflow: hidden;
   background-color: #eee; }
 
-/* #progress-1,
+#progress-1,
 #progress-2,
 #progress-3,
 #progress-4,
@@ -138,8 +135,11 @@ h2 {
 #progress-7,
 #progress-8,
 #progress-9 {
-    @include progressbar;
-} */
+  text-align: left;
+  padding: 3px 20px;
+  background: #93B4AD;
+  font-weight: bold; }
+
 .form-left {
   float: right; }
 
@@ -204,5 +204,11 @@ footer {
 
 #message div {
   padding: 0; }
+
+/* @media screen and (max-width: 500px) {
+    .intro .intro-body .brand-heading {
+    font-size: 80px;
+    }
+} */
 
 /*# sourceMappingURL=main.css.map */
