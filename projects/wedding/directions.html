@@ -13,7 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="contact.php">
+    
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -114,7 +114,7 @@
                         <p class="contact-text">Lost your invitation? Want to wish the couple well? Need to ask a question?<br />
 						Get in touch with James and Olivia by filling out the form below. They would love to hear from you</p>
 						<!-- Contact -->
-						<form id="contact-form"  role="form" action="contact.php" method="post">
+						<form name="sentMessage" id="contactForm"  role="form" method="post">
 							<div class="row contact">
 
 								<!-- Name -->
@@ -124,17 +124,17 @@
 								</div>
 								<!-- Email -->
 								<div class="form-group col-lg-4">
-									<input tabindex="2" class="form-control" type="email" id="email" name="email" required placeholder="name@domain.com" title="name@domain.com" />
+									<input tabindex="2" class="form-control" type="email" id="email" name="email" required placeholder="name@domain.com"/>
 									
 								</div>
 								<!-- Message -->
 								<div class="form-group col-lg-12">
-									<textarea tabindex="3" class="form-control" id="message" required placeholder="message"  rows="6"></textarea>
+									<textarea tabindex="3" class="form-control" name="message" id="message" required placeholder="message"  rows="6"></textarea>
 									        
 								</div>
 								<!-- Submit button -->
 								<div class="form-group col-lg-12">
-									<button tabindex="4" type="submit" class="btn btn-default">Send</button>
+									<input tabindex="4" type="submit" class="btn btn-default" value="Send"></input>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-10 col-sm-offset-2">
@@ -168,7 +168,9 @@
     <script src="js/bootstrap.min.js"></script>
 	
 	<!-- Form validity event -->
-	<script>
+     <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+<!-- 	<script>
 	var email = document.getElementById("id");
 
 	email.addEventListener("keyup", function (event) {
@@ -178,7 +180,7 @@
 		  email.setCustomValidity("");
 		}
 	});
-	</script>
+	</script> -->
 	
 </body>
 
